@@ -2,14 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>snake</title>
-    <link rel="stylesheet" href="Style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="icon" href="img/Snake.jpg" type="image/icon type">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="Style1.css">
 </head>
 <body>
-    <canvas id ="snake" width="608" height="608"></canvas>
-    <button class="reset" onclick="handleReset()">Reset</button>
-    <script src="Snake.js"></script>
+    <div class="header">
+        <div class="container">
+            <div class="navbar"> 
+                <div class="logo">
+                    <img src="img/Netraj Logo.png" width="150px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="#play">Play</a></li>
+                        <li><a href="#howtoplay">How to play</a></li>
+                        <li><a href="#otherGames">Other games</a></li>
+                        <li><a href="#footer">About me</a></li>
+                        <li><a href="#footer">Follow me on</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <!--Heading-->
+                    <h1>Snake Game</h1>
+                </div>
+                <div class="col-2">
+                    <!--image of the game-->
+                    <img src="img/Snake.jpg">
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!--Game div-->
+    <div class="game" id="play">
+        <div class="container">
+            <h1>Snake Game</h1>
+            
+            <button class="reset" onclick="handleReset()">Reset</button>
+            <br>
+            <canvas id ="snake" width="608" height="608"></canvas>
+            
+            <script src="Snake.js"></script>
+            
+        </div>
+    
+    </div>
+
+    <!--How to play-->
+    <div class="game" id="howtoplay">
+        <h2>How to play</h2>
+        <br>
+        <p>Playing this game is easy. You can play this game with the help of the four arrow keys of the keyboard. Start playing this game by pressing any arrow key. The game ends when the snake tries to go beyond the border of the frame. Also, the game ends when the head of the snake touches any part of its body.</p>
+    </div>
+
+
+    <!--other games-->
+    <div class="game">
+        
+        <div class="otherGames" id="otherGames">  
+            <h2>Other Games</h2>      
+            <div class="row">
+                <div class="col-2">
+                    <h3> <a href="https://netraj-patil.github.io/Ping-Pong/">Ping Pong</a></h3>
+                </div>                    <div class="col-2">
+                    <h3> <a href="https://netraj-patil.github.io/Tic_tac_toe.github.io/">Tic tac toe game</a></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------footer------------>
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <h3>Netraj Patil</h3>
+                    <br>
+                    <p>Hi! This is Netraj Patil. I am passionate about understanding the basics to advanced in programming. I considers myself a ‘forever student,’ eager to do both to build on his programming skills and to stay in tune with the latest digital marketing strategies through continued coursework.
+
+                    </p>
+                </div>
+                
+                <div class="col-2">
+                    <h3>If you liked my work please follow me on</h3>
+                    <br>
+                    <ul>
+                        <li> <a href="https://www.instagram.com/netra_jpatil/?hl=en">Instagram</a></li>
+                        <li><a href="https://github.com/netraj-patil">Git Hub</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <br>
+            <hr>
+
+        </div>
+    </div>
+    
 </body>
 </html>
